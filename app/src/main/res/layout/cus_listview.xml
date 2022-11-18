@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/taskIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bachgound_viewflipper"
+        android:src="@drawable/user_64">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/TaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/taskIcon"
+        android:text="Task Name"
+        android:textColor="#fc0c"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/TaskRating"
+        android:layout_marginLeft="-30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/taskIcon"
+        android:progressDrawable="@drawable/custum_ratingbar"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="1"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        />
+
+    <TextView
+        android:id="@+id/TaskCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Task Category"
+        android:textColor="#fF0942"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TaskTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Time"
+        android:padding="3dp"
+        android:background="#FC0303"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

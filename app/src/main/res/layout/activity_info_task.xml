@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".mactivity.InfoTaskActivity">
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Task Name"
+        android:textColor="#f10854"></TextView>
+
+    <ImageView
+        android:id="@+id/taskIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/bachgound_viewflipper"
+        android:src="@drawable/washing_64"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/TaskCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Task Name"
+            android:textColor="#f10854"></TextView>
+
+        <TextView
+            android:id="@+id/TaskTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Task Name"
+            android:textColor="#f10854"></TextView>
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/TaskRating"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/taskIcon"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressDrawable="@drawable/custum_ratingbar"
+        android:stepSize="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <Button
+            style="@style/ButtonInfo"
+            android:id="@+id/btnEdit"
+            android:text="Edit"></Button>
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnDelete"
+            style="@style/ButtonInfo"
+            android:text="Delete"></Button>
+
+        <Button
+            style="@style/ButtonInfo"
+            android:id="@+id/btnCancel"
+            android:text="Cancel"></Button>
+    </LinearLayout>
+</LinearLayout>
